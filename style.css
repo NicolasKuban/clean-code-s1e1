@@ -36,7 +36,7 @@
 .main__input {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .section {
@@ -136,7 +136,7 @@ input,button{
 }
 
 .list__li >    .main__input {
-  width: 226px
+  width: 226px;
 }
 
 .list__img {
@@ -151,18 +151,18 @@ input,button{
 
 /* Completed */
 .main__label_completed {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .main__input_saved {
-  display: none
+  display: none;
 }
 
 .main__input_edited {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .main__label_edited {
