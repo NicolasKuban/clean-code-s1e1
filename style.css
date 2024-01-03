@@ -19,7 +19,7 @@ body {
 
 @media (max-width:768px) {
   .header { text-align: center;
-}
+  }
 }
 .main {
   display: block;
