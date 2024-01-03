@@ -44,16 +44,16 @@
 }
 
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 li, h3 {
-  list-style:none;
+  list-style: none;
 }
 
 input,button{
-  outline:none;
+  outline: none;
 }
 
 .main__button {
@@ -157,14 +157,14 @@ input,button{
 
 /* Edit Task */
 .main__input_saved {
-  display:none
+  display: none
 }
 
 .main__input_edited {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .main__label_edited {
-  display:none;
+  display: none;
 }
