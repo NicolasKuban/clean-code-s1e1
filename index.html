@@ -12,27 +12,27 @@
   </div>
   <div class="main">
     <p>
-      <label for="main__heading_add">Add Item</label>
+      <label for="main__heading_add" class="main__label main__label_add task">Add Item</label>
       <div class="section">
-        <input id="main__heading_add"class="main__input task" type="text">
+        <input id="main__heading_add"class="main__input main__input_add task" type="text">
         <button class="main__button main__button_add">Add</button>
       </div>
     </p>
     <h3 class="main__heading">Todo</h3>
     <ul id="list__ul_todo" class="list">
       <li class="list__li">
-        <input type="checkbox">
+        <input type="checkbox" class="main__checkbox">
         <label class="main__label task">Pay Bills</label>
-        <input type="text" class="main__input task">
+        <input type="text" class="main__input main__input_saved task">
         <button class="main__button main__button_edit">Edit</button>
         <button class="main__button main__button_delete">
-          <img src="./remove.svg">
+          <img class="list__img" src="./remove.svg">
         </button>
       </li>
       <li class="list__li list__li_edit">
-        <input type="checkbox">
-        <label class="main__label task">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="main__input task">
+        <input type="checkbox" class="main__checkbox">
+        <label class="main__label main__label_edited task">Go Shopping</label>
+        <input type="text" value="Go Shopping" class="main__input main__input_edited task">
         <button class="main__button main__button_edit">Save</button>
         <button class="main__button main__button_delete">
           <img class="list__img" src="./remove.svg">
@@ -42,9 +42,9 @@
     <h3 class="main__heading">Completed</h3>
     <ul id="list__ul_completed" class="list">
       <li class="list__li">
-        <input type="checkbox" checked>
-        <label class="main__label task">See the Doctor</label>
-        <input type="text" class="main__input task">
+        <input type="checkbox" class="main__checkbox" checked>
+        <label class="main__label main__label_completed task">See the Doctor</label>
+        <input type="text" class="main__input main__input_saved task">
         <button class="main__button main__button_edit">Edit</button>
         <button class="main__button main__button_delete">
           <img class="list__img" src="./remove.svg">
