@@ -18,6 +18,7 @@ var completedTasksHolder=document.getElementById("list__ul_completed");//list__u
 var createNewTaskElement=function(taskString){
 
   let listItem=document.createElement("li");
+  let article=document.createElement("article");
 
   //input (checkbox)
   let checkBox=document.createElement("input");//checkbx
@@ -32,13 +33,14 @@ var createNewTaskElement=function(taskString){
   let deleteButton=document.createElement("button");//delete button
   let deleteButtonImg=document.createElement("img");//delete button image
 
-  listItem.className="list__li"
+  listItem.className="list__li";
+  article.className="task";
   label.innerText=taskString;
   label.className='main__label';
 
   //Each elements, needs appending
   checkBox.type="checkbox";
-  checkBox.className="main__checkbox"
+  checkBox.className="main__checkbox";
   editInput.type="text";
   editInput.classList.add("main__input");
   editInput.classList.add("main__input_saved");
@@ -49,17 +51,18 @@ var createNewTaskElement=function(taskString){
 
   deleteButton.classList.add("main__button");
   deleteButton.classList.add("main__button_delete");
-  deleteButtonImg.className="list__img"
+  deleteButtonImg.className="list__img";
   deleteButtonImg.src='./remove.svg';
   deleteButton.appendChild(deleteButtonImg);
 
 
   //and appending.
-  listItem.appendChild(checkBox);
-  listItem.appendChild(label);
-  listItem.appendChild(editInput);
-  listItem.appendChild(editButton);
-  listItem.appendChild(deleteButton);
+  article.appendChild(checkBox);
+  article.appendChild(label);
+  article.appendChild(editInput);
+  article.appendChild(editButton);
+  article.appendChild(deleteButton);
+  listItem.appendChild(article);
   return listItem;
 }
 

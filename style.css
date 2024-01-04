@@ -112,7 +112,7 @@ button {
 }
 
 /* Task list */
-.list__li {
+.task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -121,22 +121,22 @@ button {
   align-items: center;
 }
 
-.list__li > * {
+.task > * {
   vertical-align: middle;
 }
 
-.list__li > .main__checkbox {
+.task > .main__checkbox {
   margin: 0 10px;
 }
 
-.list__li > .main__label {
+.task > .main__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list__li > .main__input {
+.task > .main__input {
   width: 226px;
 }
 
